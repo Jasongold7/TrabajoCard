@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:padding="14dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="Inforamción de la trajeta de crédito" />
+
+        <Button
+            android:id="@+id/botonG"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/Nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nombre"
+        android:layout_marginTop="12dp" />
+
+    <EditText
+        android:id="@+id/Apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Apellido"
+        android:layout_marginTop="12dp"/>
+    <EditText
+        android:id="@+id/TarjetaN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Numero de Tarjeta"
+        android:layout_marginTop="12dp"
+        android:maxLength="16"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/Mes"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="Mes"
+            android:layout_marginRight="5dp"
+            android:maxLength="2"/>
+
+        <EditText
+            android:id="@+id/Anho"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="año"
+            android:layout_marginRight="5dp"
+            android:maxLength="4"/>
+
+        <EditText
+            android:id="@+id/Codigo"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="3"
+            android:hint="Código"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Direccion"
+        android:padding="15dp"
+        android:layout_marginTop="12dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/Calle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calle y Número"
+        android:layout_marginTop="12dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/Ciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:layout_marginTop="12dp"
+        android:inputType="text"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <EditText
+            android:id="@+id/Estado"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="Estado"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/CodiP"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:hint="Código Postal"
+            android:inputType="number"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
