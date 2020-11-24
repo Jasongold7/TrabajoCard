@@ -1,11 +1,11 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     tools:context=".MainActivity"
     android:padding="14dp"
@@ -122,6 +122,29 @@
             android:layout_height="wrap_content"
             android:hint="Código Postal"
             android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/botonR"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#303F9F"
+            android:layout_marginRight="30dp"
+            android:text="Registrar" />
+
+        <Button
+            android:id="@+id/botonB"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:background="#FF5722"
+            android:layout_marginLeft="40dp"
+            android:text="Buscar" />
     </LinearLayout>
 </LinearLayout>
 </ScrollView>
